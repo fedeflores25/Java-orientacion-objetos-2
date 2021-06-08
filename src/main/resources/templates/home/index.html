@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sistema integrador</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+        <!-- Navegacion-->
+        <nav th:if="${admin==true}" class="navbar navbar-expand-lg navbar-dark fixed-top"
+	th:include="nav_admin :: div"></nav>
+
+		<nav th:if="${audit==true}" class="navbar navbar-expand-lg navbar-dark fixed-top"
+	th:include="nav_audit :: div"></nav>
+	
+		<nav th:if="${anonimo==true}" class="navbar navbar-expand-lg navbar-dark fixed-top"
+	th:include="nav_anonimo :: div"></nav>
+		
+		
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">S.I - Es Un Sistema Web con Base de Datos</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">La finalidad del software en esta primera instancia es la administración de los usuarios y perfiles que tendrán acceso al
+sistema, validando la identidad de los mismos para ingresar al sistema.</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saber Mas</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Sobre el proyecto-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Funcionalidad!</h2>
+                        <hr class="divider light my-4" />
+                        <p class="text-white-50 mb-4">El sistema permite la alta, baja y modificación tanto de los usuarios como de los perfiles para aquellos usuarios
+con perfil administrador. Y en el caso de los usuarios con perfil de auditoria los mismos podrán consultar tanto el listado
+de los usuarios como el de administradores y descargar la información en un documento con formato PDF.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Contactanos!</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">¿Listo para comenzar tu próximo proyecto con nosotros? ¡Envíanos un correo electrónico y te responderemos lo antes posible!</p>
+                    </div>
+                </div>
+
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                        <a class="d-block" href="mailto:ritarociobustos@gmail.com">ritarociobustos@gmail.com</a>
+                        <a class="d-block" href="mailto:camachofernandojl@gmail.com">camachofernandojl@gmail.com</a>
+                        <a class="d-block" href="mailto:julenfourcade98@gmail.com">julenfourcade98@gmail.com</a>
+                        <a class="d-block" href="mailto:floresfederico25@gmail.com">floresfederico25@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-dark py-5">
+    <div class="container">
+        <div class="small text-center text-muted">
+            Copyright &copy;
+            <!-- This script automatically adds the current year to your website footer-->
+            <!-- (credit: https://updateyourfooter.com/)-->
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            - Universidad Nacional de Lanus
+        </div>
+    </div>
+	</footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
